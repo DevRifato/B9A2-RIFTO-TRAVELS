@@ -528,7 +528,7 @@ footer hr {
     ================================== */
 
 @media screen and (max-width: 600px) {
-  html{
+  main{
     padding: 10px;
   }
   /* links */
