@@ -1,0 +1,130 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+}
+
+/* Defults */
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+span {
+  color: #ff5400;
+  font-weight: 800;
+}
+
+.container {
+  width: 1170px;
+  margin: 100px auto;
+}
+button {
+  color: white;
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 8px;
+  background: #ff5400;
+  padding: 15px 35px;
+}
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* ===============================
+              Header
+================================== */
+header {
+  width: 1170px;
+  margin: 52px auto;
+}
+
+/* navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.logo h1 {
+  font-size: 36px;
+  font-weight: 800;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+.links a {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1170px;
+  height: 500px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("./Images/Group 13 (1) (1).png");
+  border-radius: 16px;
+}
+.banner-wrapper {
+  text-align: center;
+}
+.banner-title {
+  text-align: center;
+  color: white;
+}
+.banner-title h2 {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.banner-title p {
+  width: 676px;
+  font-size: 16px;
+  font-weight: 400;
+  margin: auto;
+  margin-bottom: 48px;
+}
+
+/* inputs */
+.banner-inputs {
+  display: inline-flex;
+  gap: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+}
+#first-input,
+#secound-input,
+#country {
+  color: rgba(19, 19, 24, 0.5);
+  border: 0;
+  padding: 15px 16px;
+  border-radius: 8px;
+}
+
+/* ===============================
+              Responsive
+================================== */
+
+
