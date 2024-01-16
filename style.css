@@ -528,9 +528,7 @@ footer hr {
     ================================== */
 
 @media screen and (max-width: 600px) {
-  main{
-    padding: 10px;
-  }
+
   /* links */
   header {
     width: 100%;
