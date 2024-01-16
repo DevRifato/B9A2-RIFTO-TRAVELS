@@ -162,5 +162,144 @@ nav ul li {
 }
 
 /* ===============================
-Responsive
+        Choose-Your-Destination
 ================================== */
+.choose-your-destination-title {
+  text-align: center;
+}
+.choose-your-destination-title p {
+  width: 643px;
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 24px auto;
+}
+.choose-your-destination-title h2 {
+  font-size: 40px;
+  font-weight: 800;
+}
+/* ===============================
+        Collage
+================================== */
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+/* ----- maldives ---- */
+.box .img-maldives {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  width: 573px;
+  height: 300px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("<path-to-image>"), url("./Images/Rectangle 5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+}
+/* ----- indonesia ---- */
+.box .img-indonesia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  width: 573px;
+  height: 300px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("<path-to-image>"), url("./Images/Rectangle 8.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+}
+/* ----- srilanka ---- */
+.box .img-srilanka {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  width: 374px;
+  height: 286px;
+  background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('./Images/Rectangle 6.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+}
+/* -----america ---- */
+.box .img-america {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  width: 474px;
+  height: 286px;
+  background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('./Images/Rectangle 7.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+}
+/* -----kashmir ---- */
+.box .img-kashmir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  width: 274px;
+    height: 286px;
+  background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('./Images/Rectangle 9.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+}
+/* -----bangladesh ---- */
+.box .img-bangladesh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  width: 473px;
+  height: 300px;
+  background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('./Images/Rectangle 11.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+}
+/* -----bandarban ---- */
+.box .img-bandarban {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  width: 673px;
+  height: 300px;
+  background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('./Images/Rectangle 10.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+}
+
