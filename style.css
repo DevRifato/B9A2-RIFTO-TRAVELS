@@ -529,12 +529,10 @@ footer hr {
 
 @media screen and (max-width: 600px) {
 
+
   /* links */
   header {
     width: 100%;
-  }
-  nav{
-    padding: 10px;
   }
 
   .container{
@@ -617,9 +615,11 @@ footer hr {
   width: 100%;
  }
  .copon{
-  left: 60px;
+  left: 10%;
  }
- 
+ .newsletter-title p{
+  width: 100%;
+ }
  footer p{
   width: 100%;
  }
