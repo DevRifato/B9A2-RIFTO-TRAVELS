@@ -394,21 +394,47 @@ nav ul li {
 }
 
 /* ===============================
+          download our app
+  ================================== */
+.app-title{
+  text-align: center;
+}
+.app-title h1 {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+}
+.app-title p {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  width: 643px;
+  margin: 24px auto;
+  text-align: center  ;
+}
+.download-app img{
+  width: 100%;
+}
+/* ===============================
           News Letter
   ================================== */
-  .newsletter{
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-  }
-
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+}
+.newsletter-img {
+  width: 672px;
+  height: 422px;
+  background-image: url(./Images/Rectangle%208%20%281%29.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+}
 .newsletter-title {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 40px;
-  width: 474px;
-  height: 422px;
   border-radius: 16px;
   border: 1px solid #ff5400;
 }
@@ -431,7 +457,62 @@ nav ul li {
   border-radius: 8px;
   background: rgba(19, 19, 24, 0.05);
 }
-  
-  /* ===============================
+.copon {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 324px;
+  height: 120px;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  transform: rotate(-19.628deg);
+  border-radius: 16px;
+  background: #ff5400;
+  position: relative;
+  top: 243px;
+  left: 340px;
+}
+.copon p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* ===============================
             Footer
     ================================== */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 502px;
+  background: rgba(19, 19, 24, 0.05);
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.footer-logo h1 {
+  font-size: 36px;
+  font-weight: 800;
+}
+.footer-wrapper {
+  text-align: center;
+}
+footer p {
+  width: 769px;
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 32px 0px;
+}
+.footer-icons i {
+  margin-left: 24px;
+  margin-bottom: 50px;
+}
+footer hr {
+  border: 1px solid rgba(19, 19, 24, 0.1);
+}
