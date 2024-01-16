@@ -53,6 +53,9 @@ nav {
 nav ul li {
   list-style: none;
 }
+#menu{
+  display: none;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -396,7 +399,7 @@ nav ul li {
 /* ===============================
           download our app
   ================================== */
-.app-title{
+.app-title {
   text-align: center;
 }
 .app-title h1 {
@@ -410,9 +413,9 @@ nav ul li {
   font-weight: 400;
   width: 643px;
   margin: 24px auto;
-  text-align: center  ;
+  text-align: center;
 }
-.download-app img{
+.download-app img {
   width: 100%;
 }
 /* ===============================
@@ -515,4 +518,109 @@ footer p {
 }
 footer hr {
   border: 1px solid rgba(19, 19, 24, 0.1);
+}
+
+.hide {
+  display: none;
+}
+/* ===============================
+            @media queary
+    ================================== */
+
+@media screen and (max-width: 600px) {
+  html{
+    padding: 10px;
+  }
+  /* links */
+  header {
+    width: 100%;
+  }
+  .container{
+    width: 100%;
+  }
+  .banner{
+    width: 100%;
+  }
+  .banner-title h2{
+    font-size: 22px;
+  }
+  .banner-title p{
+    width: 100%;
+    font-size: 14px;
+  }
+  .banner-inputs{
+    flex-direction: column;
+  }
+  .banner-wrapper{
+    padding: 5px;
+  }
+  #menu{
+    display: block;
+  }
+  .links {
+    display: none;
+  }
+
+  .our-popular-tours{
+    flex-direction: column;
+  }
+  .our-popular-tours p , .our-popular-tours ul{
+    width: 100%;
+    margin-left: 0;
+  }
+  .our-popular-tours button{
+    margin-bottom: 20px;
+  }
+
+  .choose-your-destination p{
+    width: 100%;
+  }
+
+  .box{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .box .img-maldives, .box .img-indonesia,.box .img-america,.box .img-bangladesh,.box .img-bandarban{
+  width: 100%;
+ }
+
+ .why-choose-us-title p{
+  width: 100%;
+ }
+ .row-1{
+  flex-direction: column;
+ }
+ .box-1, .box-2, .box-3{
+  width: 100%;
+ }
+ .row-1{
+  gap: 24px;
+ }
+ .box-container p{
+  width: 85%;
+ }
+ .download-app p{
+  width: 100%;
+ }
+ .newsletter{
+  flex-direction: column;
+  gap: 20px;
+}
+.newsletter-title{
+   gap: 24px;
+
+ }
+ .newsletter-img{
+  width: 100%;
+ }
+ .copon{
+  left: 60px;
+ }
+ footer{
+  padding: 0;
+ }
+ footer p{
+  width: 100%;
+ }
 }
