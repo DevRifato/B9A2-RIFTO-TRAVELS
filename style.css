@@ -535,6 +535,9 @@ footer hr {
   header {
     width: 100%;
   }
+  nav{
+    padding: 10px;
+  }
   .container{
     width: 100%;
   }
