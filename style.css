@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: "Mulish", sans-serif;
+  outline: none;
 }
 
 /* Defults */
@@ -12,6 +13,7 @@ a {
   text-decoration: none;
   color: black;
 }
+
 
 span {
   color: #ff5400;
@@ -29,8 +31,12 @@ button {
   font-weight: 700;
   text-align: center;
   border-radius: 8px;
-  background: #ff5400;
+  background-color: #ff5400;
   padding: 15px 35px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: black;
 }
 /* ------------------------------------------------------------------------------------------------------------------- */
 
@@ -53,7 +59,7 @@ nav {
 nav ul li {
   list-style: none;
 }
-#menu{
+#menu {
   display: none;
 }
 .logo {
@@ -112,21 +118,32 @@ nav ul li {
 
 /* inputs */
 .banner-inputs {
-  display: inline-flex;
+  /* display: inline-flex; */
+  display: flex;
   gap: 24px;
   padding: 16px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.3);
 }
-#first-input,
-#secound-input,
-#country {
+#input-1,
+#input-2,
+#input-3 {
   color: rgba(19, 19, 24, 0.5);
   border: 0;
   padding: 15px 16px;
   border-radius: 8px;
+  cursor: pointer;
+
 }
 
+.selector select {
+  appearance: none;
+  background-image: url(./Images/down-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center right 12px;
+  width: 120px;
+}
 /* ===============================
             Our Popular Tours
 ================================== */
@@ -205,8 +222,10 @@ nav ul li {
       rgba(19, 19, 24, 0.2) 0%,
       rgba(19, 19, 24, 0.2) 100%
     ),
-    url("<path-to-image>"), url("./Images/Rectangle 5.png");
+    url("./Images/Your-Maldives-Image-Path.png"),
+    url("./Images/Rectangle 5.png");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   border-radius: 16px;
 }
@@ -227,6 +246,7 @@ nav ul li {
     ),
     url("<path-to-image>"), url("./Images/Rectangle 8.png");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   border-radius: 16px;
 }
@@ -248,6 +268,7 @@ nav ul li {
     url("./Images/Rectangle 6.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   border-radius: 16px;
 }
 /* -----america ---- */
@@ -268,6 +289,7 @@ nav ul li {
     url("./Images/Rectangle 7.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   border-radius: 16px;
 }
 /* -----kashmir ---- */
@@ -286,6 +308,7 @@ nav ul li {
       rgba(19, 19, 24, 0.2) 100%
     ),
     url("./Images/Rectangle 9.png");
+    background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 16px;
@@ -308,6 +331,7 @@ nav ul li {
     url("./Images/Rectangle 11.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   border-radius: 16px;
 }
 /* -----bandarban ---- */
@@ -328,6 +352,7 @@ nav ul li {
     url("./Images/Rectangle 10.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   border-radius: 16px;
 }
 
@@ -528,99 +553,132 @@ footer hr {
     ================================== */
 
 @media screen and (max-width: 600px) {
-
-
   /* links */
   header {
-    width: 100%;
+    width: 90%;
   }
 
-  .container{
+  .container {
+    width: 90%;
+    overflow: hidden;
+  }
+  .banner {
     width: 100%;
   }
-  .banner{
-    width: 100%;
-  }
-  .banner-title h2{
+  .banner-title h2 {
     font-size: 22px;
   }
-  .banner-title p{
+  .banner-title p {
     width: 100%;
     font-size: 14px;
   }
-  .banner-inputs{
+  .selector select {
+    width: 100%;
+  }
+  .banner-inputs {
     flex-direction: column;
   }
-  .banner-wrapper{
-    padding: 5px;
+  .banner-wrapper {
+    padding: 10px;
   }
-  #menu{
+  #menu {
     display: block;
   }
   .links {
     display: none;
   }
 
-  .our-popular-tours{
+  #menu:hover {
+    color: tomato;
+  }
+
+  .our-popular-tours {
     flex-direction: column;
   }
-  .our-popular-tours p , .our-popular-tours ul{
+  .our-popular-tours p,
+  .our-popular-tours ul {
     width: 100%;
     margin-left: 0;
   }
-  .our-popular-tours button{
+  .our-popular-tours button {
     margin-bottom: 20px;
   }
 
-  .choose-your-destination p{
+  .choose-your-destination p {
     width: 100%;
   }
 
-  .box{
+  .box {
     flex-direction: column;
     gap: 10px;
     align-items: center;
   }
-  .box .img-maldives, .box .img-indonesia,.box .img-america,.box .img-bangladesh,.box .img-bandarban{
-  width: 100%;
- }
+  .box .img-maldives,
+  .box .img-srilanka,
+  .box .img-indonesia,
+  .box .img-kashmir,
+  .box .img-america,
+  .box .img-bangladesh,
+  .box .img-bandarban {
+    width: 100%;
+  }
 
- .why-choose-us-title p{
-  width: 100%;
- }
- .row-1{
-  flex-direction: column;
- }
- .box-1, .box-2, .box-3{
-  width: 100%;
- }
- .row-1{
-  gap: 24px;
- }
- .box-container p{
-  width: 85%;
- }
- .download-app p{
-  width: 100%;
- }
- .newsletter{
-  flex-direction: column;
-  gap: 20px;
-}
-.newsletter-title{
-   gap: 24px;
-
- }
- .newsletter-img{
-  width: 100%;
- }
- .copon{
-  left: 10%;
- }
- .newsletter-title p{
-  width: 100%;
- }
- footer p{
-  width: 100%;
- }
+  .why-choose-us-title p {
+    width: 100%;
+  }
+  .row-1 {
+    flex-direction: column;
+  }
+  .box-1,
+  .box-2,
+  .box-3 {
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .row-1 {
+    gap: 24px;
+  }
+  .box-container h2{
+    margin: 0;
+  }
+  .box-container img{
+    margin: 0;
+  }
+  .box-container p {
+    width: 100%;
+    margin: 0;
+  }
+  .download-app p {
+    width: 100%;
+  }
+  .newsletter {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .newsletter-title {
+    gap: 24px;
+  }
+  .newsletter-img {
+    width: 100%;
+  }
+  .copon {
+    width: 60%;
+    left: 20%;
+  }
+  .newsletter-title p {
+    width: 100%;
+  }
+  footer{
+    
+    padding: 10px;
+  }
+  footer p {
+    width: 100%;
+  }
+  /* -------------------------------------------------- */
 }
